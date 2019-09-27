@@ -1,40 +1,32 @@
 import tensorflow as tf
-from tensorflow.python.ops.rnn_cell import LSTMCell
-
 import numpy as np
+from tensorflow.python.ops.rnn_cell import LSTMCell
 
 
 class LSTMAutoEncoder(object):
-
-    """Basic version of LSTM-autoencoder.
-  (cf. http://arxiv.org/abs/1502.04681)
-
-  Usage:
-    ae = LSTMAutoencoder(hidden_num, inputs)
-    sess.run(ae.train)
-  """
-
-    def __init__(
-        self,
-        hidden_num,
-        inputs,
-        cell=None,
-        optimizer=None,
-        reverse=True,
-        decode_without_input=False,
-        ):
-        """
-    Args:
-      hidden_num : number of hidden elements of each LSTM unit.
-      inputs : a list of input tensors with size 
-              (batch_num x elem_num)
-      cell : an rnn cell object (the default option 
-            is `tf.python.ops.rnn_cell.LSTMCell`)
-      optimizer : optimizer for rnn (the default option is
-              `tf.train.AdamOptimizer`)
-      reverse : Option to decode in reverse order.
-      decode_without_input : Option to decode without input.
     """
+    LSTM-autoencoder (cf. http://arxiv.org/abs/1502.04681)
+
+    Args:
+    =====
+    - hidden_num : int
+        number of hidden elements in each LSTM cell.
+    - inputs : [tf.Tensor(), ...]
+        list of inptu tensors with size (batch_num x elem_num)
+    - cell : tf.python.ops.rnn_cell.LSTMCell()
+        rnn cell object 
+    - optimizer : tf.train.AdamOptimizer()
+        optimizer for rnn
+    - reverse : bool
+        flag to decode in reverse order
+    - decode_without_input : bool
+        flag to decode without inputs
+    """
+    def __init__(self, hidden_num, inputs,
+            cell=None, 
+            optimizer=None,
+            reverse=True,
+            decode_without_input=False):
 
         self.batch_num = inputs[0].get_shape().as_list()[0]
         self.elem_num = inputs[0].get_shape().as_list()[1]
