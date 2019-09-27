@@ -1,0 +1,4 @@
+
+- GCPとDockerでKaggle用計算環境構築
+  https://qiita.com/lain21/items/a33a39d465cd08b662f1
+
