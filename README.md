@@ -16,5 +16,5 @@ sess.run(ae.train, feed_dict={input_variable:input_array,...})
 ## Reference
 
 - Unsupervised Learning of Video Representations using LSTMs,
-<br>Nitish Srivastava, Elman Mansimov, Ruslan Salakhutdinov, 2015
-<br>http://arxiv.org/abs/1502.04681
+<br>http://arxiv.org/abs/1502.04681 (Nitish Srivastava et al., 2015)
+
