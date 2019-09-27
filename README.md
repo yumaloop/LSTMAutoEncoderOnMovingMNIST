@@ -1,7 +1,9 @@
-# LSTM-autoencoder
+# LSTM-AutoEncoder on Moving-MNIST
+
 TensorFlow LSTM-autoencoder implementation
 
 ## Usage
+
 ```python
 
 # hidden_num : the number of hidden units in each RNN-cell
