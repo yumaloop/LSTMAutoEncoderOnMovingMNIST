@@ -4,6 +4,8 @@
   https://qiita.com/wMETAw/items/34ba5c980e2a38e548db
 - Dockerコマンドメモ
   https://qiita.com/curseoff/items/a9e64ad01d673abb6866
+- 【Docker】Dockerでホストのディレクトリをマウントする
+  https://qiita.com/Yarimizu14/items/52f4859027165a805630
 - GCPとDockerでKaggle用計算環境構築
   https://qiita.com/lain21/items/a33a39d465cd08b662f1
 
