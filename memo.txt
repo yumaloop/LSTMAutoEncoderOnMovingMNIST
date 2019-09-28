@@ -1,5 +1,9 @@
 - Dockerのイメージとコンテナの概要と各種コマンド（随時更新するかも）
   https://yoshinorin.net/2016/10/03/docker-image-and-container-command/
+- Docker コマンドチートシート
+  https://qiita.com/wMETAw/items/34ba5c980e2a38e548db
+- Dockerコマンドメモ
+  https://qiita.com/curseoff/items/a9e64ad01d673abb6866
 - GCPとDockerでKaggle用計算環境構築
   https://qiita.com/lain21/items/a33a39d465cd08b662f1
 
