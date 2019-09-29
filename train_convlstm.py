@@ -33,6 +33,6 @@ os.mkdir('./log/'+date_string)
 print(date_string)
 
 callbacks=[]
-callbacks.append(tf.keras.callbacks.ModelCheckpoint(filepath='./log/'+date_string+'/bestweights.hdf5', save_best_only=True))
+callbacks.append(tf.keras.callbacks.ModelCheckpoint(filepath='./log/'+date_string+'/bestweights.hdf5', monitor='loss', save_best_only=True))
 model.fit(x, x, epochs=50, batch_size=4, callbacks=callbacks)
 

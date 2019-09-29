@@ -20,3 +20,5 @@ sess.run(ae.train, feed_dict={input_variable:input_array,...})
 - Unsupervised Learning of Video Representations using LSTMs,
 <br>http://arxiv.org/abs/1502.04681 (Nitish Srivastava et al., 2015)
 
+- [Tensorflow] Building RNN Models to Solve Sequential MNIST,
+<br>https://medium.com/the-artificial-impostor/notes-understanding-tensorflow-part-2-f7e5ece849f5
